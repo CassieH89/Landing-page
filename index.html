@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Essential Oils</title>
+    <style>
+      body {
+        background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+        max-width: 80%;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        color: #ffffff;
+        padding-top: 10px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #ffffff;
+
+        padding: 10px;
+      }
+
+      img {
+        width: 180px;
+        max-width: 80%;
+        border-radius: 10%;
+        padding: 2px 10px;
+      }
+
+      p {
+        margin: 0 auto 0 auto;
+        font-size: 18px;
+        font-weight: lighter;
+        line-height: 1.5;
+        color: #fff;
+        padding: 5px 40px;
+        max-width: 80%;
+        text-align: center;
+      }
+
+      ul {
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+        padding-left: 80px;
+
+        text-align: center;
+        list-style: none;
+      }
+
+      li {
+        margin: 0;
+        text-align: center;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto 0 auto;
+        border-radius: 10px;
+        background-color: #76c4c0;
+        color: #fff;
+        padding: 10px 12px;
+        font-size: 18px;
+        border: none;
+      }
+
+      button:hover {
+        opacity: 0.8;
+        transition: all 200ms ease-in-out;
+        box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.2);
+        cursor: pointer;
+      }
+
+      .body {
+        text-align: center;
+      }
+
+      .photos {
+        margin: 0 auto 0 auto;
+        text-align: center;
+      }
+
+      .popular {
+        font-weight: bold;
+      }
+
+      .list {
+        font-size: 18px;
+        font-weight: lighter;
+        padding-left: 70px;
+        color: #fff;
+        padding-top: 20px;
+        text-align: center;
+      }
+
+      .essential.oils {
+        text-decoration: none;
+        color: #e7eaf6;
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 40px;
+      }
+
+      .essential.oils:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+
+        font-size: 16px;
+        padding-bottom: 20px;
+      }
+    </style>
+  </head>
+  <div class="body">
+    <body>
+      <h1><strong>Lavender Oil🌿</strong></h1>
+      <hr />
+      <h2><em>An Essential Oil For Anxiety</em></h2>
+
+      <div class="photos">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/089/original/Lavender-Hidcote-Promise_medium.jpg?1639851021"
+          alt="Lavender Plant"
+          id="plant"
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/087/original/lavender_oil.jpeg?1639850995"
+          alt="Lavender oil"
+          id="oil"
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/088/original/images.jpeg?1639851012"
+          alt="Essential Oil"
+          id="label"
+        />
+      </div>
+
+      <br />
+      <p>
+        Some essential oils can be used as a natural way to reduce
+        <em>stress and anxiety</em>. Lavender is one of the most well-known
+        essential oils for anxiety and it smells very nice too. There are other
+        essential oils that can help with stress and anxiety that aren't as
+        popular as lavender.
+      </p>
+      <div class="list">
+        Bergamot, Jasmine, Rose, and Chamomile are some other
+        <span class="popular">popular essential oils</span> for
+        <em>stress and anxiety</em>.
+      </div>
+      <br />
+
+      <a
+        href="https://www.healthline.com/health/anxiety/essential-oils-for-anxiety#before-use"
+        target="_blank"
+        class="essential oils"
+      >
+        <em>Learn more about essential oils.</em>
+      </a>
+      <button>🌿Buy Essential Oils</button>
+
+      <p class="footer">This page was built by Cassie Hartman</p>
+
+      <script>
+        function oils() {
+          let name = prompt("What is your name?");
+          let oils = prompt("Do you use essential oils?");
+
+          oils = oils.toLowerCase();
+          oils = oils.trim();
+
+          if (oils === "yes") {
+            alert("Hi" + " " + name + "!" + " " + "That's great😀");
+          } else {
+            alert("Hi" + " " + name + "!" + " " + "Try some essential oils🌿");
+          }
+        }
+
+        let buyButton = document.querySelector("button");
+        buyButton.addEventListener("click", oils);
+      </script>
+    </body>
+  </div>
+</html>
